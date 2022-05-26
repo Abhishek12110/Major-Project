@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+    <!-- header ends here -->
+
+
+
+    <div class="container-xl">
+        {% for x in blogs %}
+          
+        <h1 class="main-title">{{x.title}}</h1>
+        <img src="../{{x.image}}" alt="image">
+        <div class="contentblo">{{x.content}}</div>
+        {% endfor %}
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer starts here -->
+    {%endblock%}
